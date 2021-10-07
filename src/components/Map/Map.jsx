@@ -5,13 +5,13 @@ import useStyles from './style'
 
 function Map() {
     const classes = useStyles();
-    const isMobile = useMediaQuery('min-width: 600px')
+    const isMobile = useMediaQuery('(min-width: 600px)')
     const coordinate = { let: 0, lng: 0 };
 
     return (
         <div className={classes.mapContainer}>
             <GoogleMapReact 
-             key= 'AIzaSyDbYqGyO2jC_zrLLr2EeYTNxlC9Sd9BEpM'
+             bootstrapURLKeys= {{key: 'AIzaSyDbYqGyO2jC_zrLLr2EeYTNxlC9Sd9BEpM'}}
              defaultCenter={coordinate}
              center={coordinate}
              defaultZoom={14}

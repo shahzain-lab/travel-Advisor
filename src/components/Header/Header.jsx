@@ -1,4 +1,4 @@
-import { SearchOutlined } from '@mui/icons-material'
+import { SearchIcon } from '@material-ui/icons'
 import { AppBar, InputBase, Toolbar, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import { Autocomplete } from '@react-google-maps/api'
@@ -20,7 +20,7 @@ function Header() {
                     {/* <Autocomplete> */}
                         <div className={classes.search}>
                             <div className={classes.searchIcon}>
-                                <SearchOutlined />
+                                <SearchIcon />
                             </div>
                             <InputBase placeholder="Search..." classes={{root: classes.inputRoot, input: classes.inputInput}} />
                         </div>
